@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link rel="stylesheet" href="static/CSS/registration.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Driver Registration</h1>
+        <form action="/register_driver" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="driver_name" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="driver_image" accept="image/*" required>
+            </div>
+            <button type="submit" onclick="window.location.href='/register_driver'">Register</button>
+        </form>
+
+        <!-- <form action="/register_driver" method="POST" enctype="multipart/form-data">
+          <h1>Register Driver</h1>
+          <input type="text" name="driver_name" placeholder="Driver's Name" required />
+          <input type="file" name="driver_image" accept="image/*" required />
+          <button type="submit">Register</button>
+      </form> -->
+    </div>
+
+</body>
+</html>

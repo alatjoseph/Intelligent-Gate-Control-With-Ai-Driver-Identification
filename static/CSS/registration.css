@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  max-width: 400px;
+  width: 100%; /* Allow container to be responsive */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color for contrast */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555; /* Light gray label color */
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 95%;
+  padding: 10px; /* Default padding for other inputs */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.name-input {
+  padding: 15px; /* Specific padding for name input */
+}
+
+input[type="file"] {
+  border: none; /* Remove border for file input */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green button color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
