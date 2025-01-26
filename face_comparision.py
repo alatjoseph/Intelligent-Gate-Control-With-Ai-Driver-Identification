@@ -5,6 +5,7 @@ import cv2
 import face_comparision
 
 
+# //herferf
 def perform_face_comparison(fname,):
     user_image_path = os.path.join("static", "user_img", fname)
     known_faces_directory= "static/admin_img"
