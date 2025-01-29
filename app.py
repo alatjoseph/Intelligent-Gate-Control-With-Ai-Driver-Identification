@@ -81,7 +81,7 @@ def register_driver():
     driver_image = request.files['driver_image']
     
     # Save the image to the server (you may want to adjust the path)
-    image_path = f'static/images/{driver_image.filename}'
+    image_path = f'static/images/registered_driver/{driver_image.filename}'
     driver_image.save(image_path)
 
    

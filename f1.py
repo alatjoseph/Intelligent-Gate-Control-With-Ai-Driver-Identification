@@ -5,29 +5,10 @@ import face_recognition
 
 
 def compare_images(image1_path, image2_path, tolerance=0.6):
-    """
-    Compares two images to determine if they contain the same person.
-
-    Args:
-        image1_path: Path to the first image.
-        image2_path: Path to the second image.
-        tolerance: Distance threshold for face comparison. 
-
-    Returns:
-        A tuple (result, distance) where:
-        - result: True if the images likely contain the same person, False otherwise.
-        - distance: The face distance between the two images, or None if comparison couldn't be made.
-    """
+   
 
     def encode_face(image):
-        """Encodes the face in the given image.
-
-        Args:
-            image: The image to encode.
-
-        Returns:
-            The face encoding, or None if no face is found.
-        """
+       
         rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         face_encodings = face_recognition.face_encodings(rgb_image)
         if len(face_encodings) > 1:
@@ -58,8 +39,8 @@ def compare_images(image1_path, image2_path, tolerance=0.6):
 
 
 # Example Usage
-image1_path = os.path.join("static", "images", "alat.jpg")  # Replace with your first image path
-image2_path = os.path.join("static", "images", "IMG20230122111651.jpg")  # Replace with your second image path
+image1_path = os.path.join("static", "images","user_image", "alat.jpg")  # Replace with your first image path
+image2_path = os.path.join("static", "images", "user_image",".trashed-1682435503-IMG_20230326_104838.jpg")  # Replace with your second image path
 
 result, distance = compare_images(image1_path, image2_path)
 if result:
